@@ -28,7 +28,7 @@ outputs:
 
 runs: 
   using: docker
-  image: Dockerfile
+  image: ../../Dockerfile
   env: 
     INPUT_NAME: ${{inputs.name}}
     INPUT_AGE: ${{inputs.age}}
