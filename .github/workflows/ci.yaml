@@ -12,6 +12,6 @@ jobs:
         uses: ./.github/actions
         with:
           name: "Ayesha Azad"
-          age: 24
+          age: "24"
           city: "Muzaffarabad"
-          format: json
+          format: "json"

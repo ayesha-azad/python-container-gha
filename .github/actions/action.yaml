@@ -6,15 +6,15 @@ inputs:
     default: "Ayesha"
   age: 
     required: true
-    default: 16
+    default: "16"
   city: 
     required: true
     default: "Abbotabad"
   format:
     required: true
-    default: text
+    default: "text"
   output_file:
-    default: result.txt
+    default: "result.txt"
 
 outputs:
   greeting:
