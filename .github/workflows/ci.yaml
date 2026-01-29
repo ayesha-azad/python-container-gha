@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Checking Code
         uses: actions/checkout@v4
+      - name: python Linter 
+        uses: sunnysid3up/python-linter@master
       - name: Testing Action 
         uses: ./.github/actions
         with:
