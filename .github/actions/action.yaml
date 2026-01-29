@@ -1,0 +1,37 @@
+name: Testing my skills hehehe
+
+inputs:
+  name:
+    required: true
+    default: "Ayesha"
+  age: 
+    required: true
+    default: 16
+  city: 
+    required: true
+    default: "Abbotabad"
+  format:
+    required: true
+    default: text
+  output_file:
+    default: result.txt
+
+outputs:
+  greeting:
+    description: "Adding greeting"
+  status:
+    description: "Adding status"
+  is_adult:
+    description: "Adding value of status"
+  output_file:
+    description: "Adding output file"
+
+runs: 
+  using: docker
+  image: Dockerfile
+  args: 
+    ${{inputs.name}}
+    ${{inputs.age}}
+    ${{inputs.city}}
+    ${{inputs.format}}
+    ${{inputs.output_file}}

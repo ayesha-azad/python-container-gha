@@ -1,0 +1,15 @@
+name: Testing Inputs and Outputs for python files 
+
+on: push 
+
+jobs: 
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing Action 
+        uses: ./.github/actions
+        with:
+          name: "Ayesha Azad"
+          age: 24
+          city: "Muzaffarabad"
+          format: json
