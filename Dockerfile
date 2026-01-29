@@ -1,5 +1,7 @@
 FROM python:3.10-alpine⁠
 
-COPY app.py app.py
+WORKDIR app
+
+COPY . .
 
 CMD ["python", "app.py"]
