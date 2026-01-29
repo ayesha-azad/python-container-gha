@@ -8,10 +8,20 @@ jobs:
     steps:
       - name: Checking Code
         uses: actions/checkout@v4
-      - name: python Linter 
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: python Linter
         run: |
-          pip install pylint 
+          python3 -m venv venv
+          source venv/bin/activate
+          pip install pylint
           pylint app.py || true
+
+          
       - name: Testing Action 
         uses: ./.github/actions
         with:

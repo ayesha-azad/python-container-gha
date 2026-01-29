@@ -29,9 +29,3 @@ outputs:
 runs: 
   using: docker
   image: ../../Dockerfile
-  env: 
-    INPUT_NAME: ${{inputs.name}}
-    INPUT_AGE: ${{inputs.age}}
-    INPUT_CITY: ${{inputs.city}}
-    INPUT_FORMAT: ${{inputs.format}}
-    INPUT_OUTPUT_FILE: ${{inputs.output_file}}

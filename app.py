@@ -28,7 +28,7 @@ def main():
     output_file = get_env("INPUT_OUTPUT_FILE", default="result.txt")
 
     try:
-        age = int(age)
+        age = int(age.strip())
     except ValueError:
         print("❌ INPUT_AGE must be a number")
         sys.exit(1)
