@@ -29,9 +29,9 @@ outputs:
 runs: 
   using: docker
   image: Dockerfile
-  args: 
-    ${{inputs.name}}
-    ${{inputs.age}}
-    ${{inputs.city}}
-    ${{inputs.format}}
-    ${{inputs.output_file}}
+  env: 
+    INPUT_NAME: ${{inputs.name}}
+    INPUT_AGE: ${{inputs.age}}
+    INPUT_CITY: ${{inputs.city}}
+    INPUT_FORMAT: ${{inputs.format}}
+    INPUT_OUTPUT_FILE: ${{inputs.output_file}}
